@@ -1,6 +1,4 @@
-@extends('layout')
-
-@section('content')
+<x-layout>
     @include('partials._hero')
     @include('partials._search')
     @unless (count($listings) == 0)
@@ -12,4 +10,4 @@
     @else
         <p>There are no listings</p>
     @endunless
-@endsection
+</x-layout>
