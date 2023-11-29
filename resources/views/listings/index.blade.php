@@ -7,6 +7,9 @@
                 <x-listing-card :listing="$listing" />
             @endforeach
         </div>
+        <div class="mt p-4">
+            {{$listings->links()}}
+        </div>
     @else
         <p>There are no listings</p>
     @endunless
